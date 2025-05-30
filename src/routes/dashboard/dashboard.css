@@ -1,0 +1,38 @@
+/* Dashboard */
+
+.dashboard {
+    color: #FFFFFF;
+    height: 100%;
+}
+
+.dashboard .movies {
+    padding: 100px 70px 0 70px;
+}
+
+.homepage, .favorites, .watchlater {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.favorites .movies-list, .watchlater .movies-list {
+    margin-left: 0;
+}
+
+.movies-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+.main-title {
+    font-size: 63px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    border-bottom: solid 5px #E31C25;
+    display: inline-block;
+    margin-bottom: 0;
+}

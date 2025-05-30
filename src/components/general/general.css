@@ -1,0 +1,155 @@
+:root {
+    --color-error: #E31C25;
+    --color-white: #FFFFFF;
+    --color-dark-bg: #2C2C2C;
+    --color-btn-bg: #BB000E;
+    --color-btn-active-bg: #E31C25;
+    --opacity-low: 40%;
+    --opacity-medium: 60%;
+    --opacity-high: 80%;
+}
+
+#showPasswordIcon {
+    margin-left: 5px;
+}
+
+/* Form group */
+
+.form-group {
+    width: 100%;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.form-group.dark {
+    margin: 20px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.form-group.dark label {
+    color: var(--color-white);
+}
+
+.form-group.dark input {
+    color: var(--color-white);
+    background-color: var(--color-dark-bg);
+    padding: 5px;
+}
+
+.form-group input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--color-error);
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.form-group.error input {
+    border: 1px solid var(--color-error);
+}
+
+.form-group svg {
+    opacity: var(--opacity-low);
+    margin-right: 10px;
+}
+
+.form-group.error svg {
+    opacity: 100%;
+    color: var(--color-error);
+}
+
+.form-group input:focus-visible {
+    outline: none;
+}
+
+/* Select group */
+
+.select-group {
+    color: var(--color-white);
+    margin: 20px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.select-group select:focus-visible {
+    outline: none;
+}
+
+.select-group select {
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--color-error);
+    color: var(--color-white);
+    background-color: var(--color-dark-bg);
+    margin: 10px 0;
+    padding: 5px 0;
+    width: 100%;
+}
+
+/* Button */
+
+.btn {
+    color: var(--color-white);
+    background-color: var(--color-btn-bg);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.btn.active {
+    background-color: var(--color-btn-active-bg);
+}
+
+.btn.hover:hover {
+    opacity: var(--opacity-high);
+    cursor: pointer;
+}
+
+.btn svg {
+    margin-right: 5px;
+}
+
+.btn.btn-header {
+    width: 50%;
+    padding: 15px 20px;
+}
+
+.btn.sign {
+    align-self: end;
+}
+
+/* Search bar */
+
+.search-bar {
+    color: var(--color-white);
+    background-color: var(--color-dark-bg);
+    border: none;
+    border-radius: 50px;
+    padding: 5px 20px;
+    margin: 0 20px;
+    width: 100%;
+    max-width: 535px;
+}
+
+.search-bar:hover {
+    cursor: pointer;
+}
+
+.search-bar::placeholder {
+    color: var(--color-white);
+    opacity: var(--opacity-medium);
+}
+
+.search-bar:focus-visible {
+    outline: none;
+}
+
+.search-bar:hover::placeholder {
+    opacity: 100%;
+}
+
+.error label {
+    color: var(--color-error) !important;
+}
